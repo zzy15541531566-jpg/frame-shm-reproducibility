@@ -66,4 +66,10 @@ The archived full results report mean test accuracy of approximately 85.0641% fo
 
 ## Availability and licensing
 
-A public repository URL, paper-specific release tag, and author-approved licenses have not yet been assigned to this preparation package. No software or data reuse license is granted by this README. Dependencies retain their own licenses. Before publishing the paper release, the author should confirm rights to redistribute all included code/data and add the selected code and data license notices. Do not cite this draft as an already published release.
+The code, synthetic dataset, configuration and archived reference results are publicly available at [zzy15541531566-jpg/frame-shm-reproducibility](https://github.com/zzy15541531566-jpg/frame-shm-reproducibility).
+
+The original software code in `src/` and `scripts/`, together with its configuration and associated software documentation, is licensed under the [MIT License](LICENSE). Copyright (c) 2026 Zhenyu Zhao. Third-party dependencies retain their own licenses.
+
+This software license does not assign a separate reuse license to the dataset and reference-result assets in `data/` and `reference_results/`; their licensing remains to be specified.
+
+A paper-specific release tag has not yet been assigned. The repository is still being prepared for the next manuscript revision; do not describe this draft as a finalized paper release. The retained `frame-shm-reproducibility-draft.zip` predates the license addition; use the current repository files and license notice.
