@@ -1,0 +1,11 @@
+{
+  "n": 10,
+  "mean_difference_pp": 0.6410256410256465,
+  "sd_difference_pp": 0.9791828408025313,
+  "corrected_se_pp": 0.5792923808429905,
+  "corrected_t": 1.1065666703449841,
+  "corrected_p_two_sided": 0.2971800972208923,
+  "corrected_95_low_pp": -0.66942476765275,
+  "corrected_95_high_pp": 1.951476049704043,
+  "interpretation": "Approximate repeated-split comparison; not evidence of equivalence or external validity."
+}

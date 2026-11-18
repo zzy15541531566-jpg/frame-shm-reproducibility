@@ -1,0 +1,11 @@
+{
+  "pooled_exact_match": true,
+  "all_class_f1_match": true,
+  "all_split_metrics_match": true,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "sklearn": "1.8.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+}

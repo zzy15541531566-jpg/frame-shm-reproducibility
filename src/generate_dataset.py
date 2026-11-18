@@ -339,7 +339,7 @@ def decode_class(class_id: int, levels: list[float]) -> tuple[int, float]:
 
 # 生成完整合成数据集
 # 输出：包含标签列与特征列的DataFrame
-def generate() -> pd.DataFrame:
+def generate(actual_damage_records: list | None = None) -> pd.DataFrame:
     config = load_config()
     structure = config["structure"]
     uncertainty = config["uncertainty"]
@@ -390,6 +390,14 @@ def generate() -> pd.DataFrame:
                 )
                 # 对应楼层刚度乘以（1-实际损伤程度）
                 stiffness[story - 1] *= 1.0 - actual
+
+            # 可选审计记录：只记录数值，不增加随机抽样或改变样本生成顺序。
+            if actual_damage_records is not None:
+                actual_damage_records.append({
+                    "label_id": class_id, "damage_story": story,
+                    "nominal_stiffness_loss": severity,
+                    "actual_stiffness_loss": actual if story > 0 else 0.0,
+                })
 
             # 构建刚度矩阵
             stiffness_matrix = build_stiffness(stiffness)
