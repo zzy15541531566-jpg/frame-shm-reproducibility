@@ -1,0 +1,52 @@
+{
+  "data": {
+    "samples_per_class": 120,
+    "time_steps": 768,
+    "time_step_seconds": 0.01,
+    "sampling_frequency_hz": 100.0,
+    "generation_seed": 20260708
+  },
+  "structure": {
+    "story_stiffness": [520000.0, 480000.0, 440000.0, 400000.0],
+    "story_mass": [12000.0, 11500.0, 11000.0, 10500.0],
+    "damage_levels": [0.10, 0.20, 0.30]
+  },
+  "uncertainty": {
+    "stiffness_std_ratio": 0.030,
+    "mass_std_ratio": 0.020,
+    "damage_std": 0.012,
+    "damage_lower_bound": 0.04,
+    "damage_upper_bound": 0.42,
+    "damping_ratio_min": 0.025,
+    "damping_ratio_max": 0.031,
+    "excitation_scale_min": 0.8,
+    "excitation_scale_max": 1.2,
+    "excitation_random_ratio": 0.15,
+    "measurement_noise_std": 0.004
+  },
+  "validation": {
+    "test_fraction": 0.20,
+    "seeds": [20260708, 20260709, 20240101, 20240102, 20250101, 20250102, 20260101, 20260102, 13579, 24680]
+  },
+  "mlp": {
+    "hidden_units": 40,
+    "activation": "relu",
+    "solver": "adam",
+    "batch_size": 32,
+    "learning_rate_init": 0.001,
+    "alpha": 0.001,
+    "max_iter": 500,
+    "early_stopping": true,
+    "validation_fraction": 0.15,
+    "n_iter_no_change": 25
+  },
+  "baselines": {
+    "svm_c": 10.0,
+    "random_forest_trees": 500,
+    "logistic_c": 1.0
+  },
+  "analysis": {
+    "hidden_widths": [20, 40, 60, 80],
+    "permutation_repeats": 20
+  }
+}

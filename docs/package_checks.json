@@ -1,0 +1,10 @@
+{
+  "archive_checks": "passed",
+  "module_help": "passed",
+  "regeneration_rows": 1560,
+  "feature_count": 28,
+  "max_abs_feature_difference": 4.999112235282155e-12,
+  "labels_and_order": "matched",
+  "model_training_rerun_in_this_package_check": false,
+  "public_release_created": false
+}
